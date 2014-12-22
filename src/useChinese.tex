@@ -1,14 +1,43 @@
 % !TEX program = XeLaTeX
 % !TEX encoding = UTF-8
-\documentclass[UTF8,nofonts]{ctexart}
-\setCJKmainfont[BoldFont=FandolSong-Bold.otf,ItalicFont=FandolKai-Regular.otf]{FandolSong-Regular.otf}
-\setCJKsansfont[BoldFont=FandolHei-Bold.otf]{FandolHei-Regular.otf}
-\setCJKmonofont{FandolFang-Regular.otf}
+\documentclass[UTF8]{ctexart}
 
-\author{lancy}
-\title{文艺复兴史}
+\title{\LaTeX 中文设置之最高层方案}
+\author{xiaoyong}
+\date{\today}
 
 \begin{document}
-    \maketitle
-    文章内容。
+\maketitle
+ 
+\begin{center}
+  1. 字体示例：\\
+  \begin{tabular}{c|c}
+    \hline
+    \textbf{\TeX 命令} & \textbf{效果}\\
+    \hline
+    \verb|{\songti 宋体}| & {\songti 宋体}\\
+    \hline
+    \verb|{\heiti 黑体}| & {\heiti 黑体}\\
+    \hline
+    \verb|{\fangsong 仿宋}| & {\fangsong 仿宋}\\
+    \hline
+    \verb|{\kaishu 楷书}| & {\kaishu 楷书}\\
+    \hline
+  \end{tabular}
+\end{center}
+ 
+\begin{center}
+  2. 字号示例：\\
+  {\zihao{0}初号}
+  {\zihao{1}一号}
+  {\zihao{2}二号}
+  {\zihao{3}三号}
+  {\zihao{4}四号}
+  {\zihao{5}五号}
+  {\zihao{6}六号}
+  {\zihao{7}七号}
+  {\zihao{8}八号}
+\end{center}
+ 
 \end{document}
+
